@@ -1,0 +1,127 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Profile Section */
+.profile-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.profile-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 80%;
+    max-width: 600px;
+}
+
+.profile-img {
+    width: 150px; /* Adjust as per your preference */
+    height: 150px; /* Ensure width and height are the same */
+    border-radius: 50%; /* This makes the image round */
+    margin-bottom: 20px;
+    border: 3px solid #0077b5; /* LinkedIn blue border for styling */
+    object-fit: cover; /* Ensures the image inside the circle is scaled correctly */
+}
+.profile-name {
+    font-size: 2em;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.profile-description {
+    font-size: 1em;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.experience {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.experience h2 {
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.job {
+    margin-bottom: 10px;
+}
+
+/* Social Links */
+.social-links {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Add space between links */
+}
+
+.social-links a {
+    text-decoration: none;
+    font-size: 1.2em;
+    color: #0077b5;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #005582;
+}
+
+/* Project Section */
+.project-section {
+    display: flex;
+    justify-content: center;
+}
+
+.project-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 80%;
+    max-width: 600px;
+}
+
+.project-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.project-description {
+    font-size: 1em;
+    color: #333;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+    .profile-card, .project-card {
+        width: 100%;
+    }
+
+    .social-links {
+        flex-direction: column;
+        gap: 15px; /* Adjust gap for mobile */
+    }
+}
